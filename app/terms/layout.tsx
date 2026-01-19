@@ -11,10 +11,10 @@ export const metadata: Metadata = {
     siteName: 'CDAIO // DIVISION',
     images: [
       {
-        url: 'https://cdaio.com/cdaio_-_forum_og.png',
+        url: '/cdaioopengraph.png',
         width: 1200,
         height: 630,
-        alt: 'CDAIO Forum - Data and AI Leadership Community',
+        alt: 'CDAIO // DIVISION - Data and AI Leadership Community',
       },
     ],
     locale: 'en_US',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Terms of Use | CDAIO // DIVISION',
     description: 'Read the terms and conditions for using the CDAIO platform and participating in our community.',
-    images: ['https://cdaio.com/cdaio_-_forum_og.png'],
+    images: ['/cdaioopengraph.png'],
   },
 };
 

@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     siteName: 'CDAIO // DIVISION',
     images: [
       {
-        url: 'https://cdaio.com/cdaio_-_forum_og.png',
+        url: '/cdaioopengraph.png',
         width: 1200,
         height: 630,
-        alt: 'CDAIO Forum - Data and AI Leadership Community',
+        alt: 'CDAIO // DIVISION - Data and AI Leadership Community',
       },
     ],
     locale: 'en_US',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'CDAIO // DIVISION - Data. Intelligence. Motion.',
     description: 'A peer-to-peer ecosystem where executives, their teams, and solution providers converge to build the intelligent future.',
-    images: ['https://cdaio.com/cdaio_-_forum_og.png'],
+    images: ['/cdaioopengraph.png'],
   },
 };
 
