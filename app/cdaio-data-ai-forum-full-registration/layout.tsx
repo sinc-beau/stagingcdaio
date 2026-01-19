@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     siteName: 'CDAIO // DIVISION',
     images: [
       {
-        url: '/cdaio_-_forum_og.png',
+        url: 'https://cdaio.com/cdaio_-_forum_og.png',
         width: 1200,
         height: 630,
         alt: 'CDAIO Forum - Data and AI Leadership Community',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Complete Your Forum Registration | CDAIO Forum Austin 2026',
     description: 'Complete your travel and logistics information for the CDAIO National Forum in Austin, TX.',
-    images: ['/cdaio_-_forum_og.png'],
+    images: ['https://cdaio.com/cdaio_-_forum_og.png'],
   },
 };
 
