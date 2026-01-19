@@ -5,7 +5,7 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://cdaio.com'),
+  metadataBase: new URL('https://cdaiodivision.org'),
   title: 'CDAIO // DIVISION - Data. Intelligence. Motion.',
   description: 'A peer-to-peer ecosystem where executives, their teams, and solution providers converge to build the intelligent future. Join the premier data and AI leadership community.',
   keywords: 'data leadership, AI governance, CDAO, CAIO, data strategy, AI strategy, executive community, data forum',
@@ -13,11 +13,11 @@ export const metadata: Metadata = {
     title: 'CDAIO // DIVISION - Data. Intelligence. Motion.',
     description: 'A peer-to-peer ecosystem where executives, their teams, and solution providers converge to build the intelligent future. Join the premier data and AI leadership community.',
     type: 'website',
-    url: 'https://cdaio.com',
+    url: 'https://cdaiodivision.org',
     siteName: 'CDAIO // DIVISION',
     images: [
       {
-        url: 'https://cdaio.com/cdaioopengraph.png',
+        url: 'https://cdaiodivision.org/cdaioopengraph.png',
         width: 1200,
         height: 630,
         alt: 'CDAIO // DIVISION - Data and AI Leadership Community',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'CDAIO // DIVISION - Data. Intelligence. Motion.',
     description: 'A peer-to-peer ecosystem where executives, their teams, and solution providers converge to build the intelligent future.',
-    images: ['https://cdaio.com/cdaioopengraph.png'],
+    images: ['https://cdaiodivision.org/cdaioopengraph.png'],
   },
 };
 

@@ -7,11 +7,11 @@ export const metadata: Metadata = {
     title: 'Privacy Policy | CDAIO // DIVISION',
     description: 'Learn about how CDAIO collects, uses, and protects your personal information.',
     type: 'website',
-    url: 'https://cdaio.com/privacy',
+    url: 'https://cdaiodivision.org/privacy',
     siteName: 'CDAIO // DIVISION',
     images: [
       {
-        url: 'https://cdaio.com/cdaioopengraph.png',
+        url: 'https://cdaiodivision.org/cdaioopengraph.png',
         width: 1200,
         height: 630,
         alt: 'CDAIO // DIVISION - Data and AI Leadership Community',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Privacy Policy | CDAIO // DIVISION',
     description: 'Learn about how CDAIO collects, uses, and protects your personal information.',
-    images: ['https://cdaio.com/cdaioopengraph.png'],
+    images: ['https://cdaiodivision.org/cdaioopengraph.png'],
   },
 };
 
