@@ -1,0 +1,28 @@
+import './globals.css';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'] });
+
+export const metadata: Metadata = {
+  title: 'CDAIO // DIVISION - Data. Intelligence. Motion.',
+  description: 'A peer-to-peer ecosystem where executives, their teams, and solution providers converge to build the intelligent future. Join the premier data and AI leadership community.',
+  keywords: 'data leadership, AI governance, CDAO, CAIO, data strategy, AI strategy, executive community, data forum',
+  openGraph: {
+    title: 'CDAIO // DIVISION - Data. Intelligence. Motion.',
+    description: 'A peer-to-peer ecosystem for data and AI leaders building the intelligent future.',
+    type: 'website',
+  },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+    </html>
+  );
+}
