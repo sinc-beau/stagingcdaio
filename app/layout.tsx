@@ -5,13 +5,31 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://cdaio.com'),
   title: 'CDAIO // DIVISION - Data. Intelligence. Motion.',
   description: 'A peer-to-peer ecosystem where executives, their teams, and solution providers converge to build the intelligent future. Join the premier data and AI leadership community.',
   keywords: 'data leadership, AI governance, CDAO, CAIO, data strategy, AI strategy, executive community, data forum',
   openGraph: {
     title: 'CDAIO // DIVISION - Data. Intelligence. Motion.',
-    description: 'A peer-to-peer ecosystem for data and AI leaders building the intelligent future.',
+    description: 'A peer-to-peer ecosystem where executives, their teams, and solution providers converge to build the intelligent future. Join the premier data and AI leadership community.',
     type: 'website',
+    url: 'https://cdaio.com',
+    siteName: 'CDAIO // DIVISION',
+    images: [
+      {
+        url: '/cdaio_-_forum_og.png',
+        width: 1200,
+        height: 630,
+        alt: 'CDAIO Forum - Data and AI Leadership Community',
+      },
+    ],
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CDAIO // DIVISION - Data. Intelligence. Motion.',
+    description: 'A peer-to-peer ecosystem where executives, their teams, and solution providers converge to build the intelligent future.',
+    images: ['/cdaio_-_forum_og.png'],
   },
 };
 
