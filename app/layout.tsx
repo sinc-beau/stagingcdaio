@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'CDAIO // DIVISION',
     images: [
       {
-        url: '/cdaioopengraph.png',
+        url: 'https://cdaio.com/cdaioopengraph.png',
         width: 1200,
         height: 630,
         alt: 'CDAIO // DIVISION - Data and AI Leadership Community',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'CDAIO // DIVISION - Data. Intelligence. Motion.',
     description: 'A peer-to-peer ecosystem where executives, their teams, and solution providers converge to build the intelligent future.',
-    images: ['/cdaioopengraph.png'],
+    images: ['https://cdaio.com/cdaioopengraph.png'],
   },
 };
 

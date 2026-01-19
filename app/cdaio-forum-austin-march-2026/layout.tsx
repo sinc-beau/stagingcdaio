@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     siteName: 'CDAIO // DIVISION',
     images: [
       {
-        url: '/cdaioopengraph.png',
+        url: 'https://cdaio.com/cdaioopengraph.png',
         width: 1200,
         height: 630,
         alt: 'CDAIO // DIVISION - Data and AI Leadership Community',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'CDAIO National Forum - Austin, TX | March 22-24, 2026',
     description: 'Join 50+ data and AI leaders at the CDAIO National Forum in Austin. Three days of strategic insights on enterprise data and AI transformation.',
-    images: ['/cdaioopengraph.png'],
+    images: ['https://cdaio.com/cdaioopengraph.png'],
   },
 };
 
