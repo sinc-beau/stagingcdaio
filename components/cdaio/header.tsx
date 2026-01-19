@@ -61,7 +61,7 @@ export default function Header({ onOpenJoinModal }: HeaderProps) {
             </span>
           </a>
 
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -85,7 +85,7 @@ export default function Header({ onOpenJoinModal }: HeaderProps) {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-[#022A4A]"
+            className="lg:hidden p-2 text-[#022A4A]"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -93,7 +93,7 @@ export default function Header({ onOpenJoinModal }: HeaderProps) {
         </div>
 
         {isMobileMenuOpen && (
-          <nav className="md:hidden mt-6 pb-4 border-t border-[#022A4A]/10 pt-4 space-y-4">
+          <nav className="lg:hidden mt-6 pb-4 border-t border-[#022A4A]/10 pt-4 space-y-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
