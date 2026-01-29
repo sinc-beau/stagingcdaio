@@ -259,7 +259,7 @@ function FeaturedSpeakersSection() {
               key={index}
               className="bg-white border-2 border-[#022A4A]/10 hover:border-[#007BFF]/50 transition-all duration-300 overflow-hidden group"
             >
-              <div className="relative aspect-[3/4] bg-[#022A4A]/5">
+              <div className="relative aspect-square bg-[#022A4A]/5">
                 <Image
                   src={speaker.image}
                   alt={speaker.name}
@@ -267,14 +267,14 @@ function FeaturedSpeakersSection() {
                   className="object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                 />
               </div>
-              <div className="p-2">
-                <h3 className="text-xs font-bold text-[#022A4A] mb-0.5 uppercase leading-tight">
+              <div className="p-3">
+                <h3 className="text-sm font-bold text-[#022A4A] mb-1 uppercase leading-tight">
                   {speaker.name}
                 </h3>
-                <p className="text-[10px] text-[#007BFF] font-semibold mb-0.5 leading-tight">
+                <p className="text-xs text-[#007BFF] font-semibold mb-0.5 leading-tight">
                   {speaker.title}
                 </p>
-                <p className="text-[10px] text-[#022A4A]/70 leading-tight">
+                <p className="text-xs text-[#022A4A]/70 leading-tight">
                   {speaker.organization}
                 </p>
               </div>
