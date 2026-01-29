@@ -16,12 +16,12 @@ export default function ForumPage() {
       <main>
         <HeroSection />
         <FeaturedSpeakersSection />
-        <WhyAttendSection />
         <AgendaHighlightsSection />
+        <RegistrationSection />
+        <WhyAttendSection />
         <VenueSection />
         <ExperienceTypesSection />
         <NetworkingSection />
-        <RegistrationSection />
       </main>
       <Footer />
       <JoinModal isOpen={isJoinModalOpen} onClose={() => setIsJoinModalOpen(false)} />
@@ -241,19 +241,19 @@ function FeaturedSpeakersSection() {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-8 lg:px-16">
-        <div className="text-center mb-16">
-          <div className="text-xs font-mono text-[#007BFF] tracking-wider mb-4 uppercase">Industry Leaders</div>
-          <h2 className="text-5xl lg:text-6xl font-black text-[#022A4A] mb-6 uppercase">
+        <div className="text-center mb-10">
+          <div className="text-xs font-mono text-[#007BFF] tracking-wider mb-3 uppercase">Industry Leaders</div>
+          <h2 className="text-4xl lg:text-5xl font-black text-[#022A4A] mb-4 uppercase">
             Featured Speakers
           </h2>
-          <p className="text-xl text-[#022A4A]/70 max-w-3xl mx-auto">
+          <p className="text-lg text-[#022A4A]/70 max-w-3xl mx-auto">
             Learn from proven data and AI leaders driving transformation at enterprise scale.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
           {speakers.map((speaker, index) => (
             <div
               key={index}
@@ -267,14 +267,14 @@ function FeaturedSpeakersSection() {
                   className="object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                 />
               </div>
-              <div className="p-3">
-                <h3 className="text-sm font-bold text-[#022A4A] mb-1 uppercase leading-tight">
+              <div className="p-2">
+                <h3 className="text-xs font-bold text-[#022A4A] mb-0.5 uppercase leading-tight">
                   {speaker.name}
                 </h3>
-                <p className="text-xs text-[#007BFF] font-semibold mb-1 leading-tight">
+                <p className="text-[10px] text-[#007BFF] font-semibold mb-0.5 leading-tight">
                   {speaker.title}
                 </p>
-                <p className="text-xs text-[#022A4A]/70 leading-tight">
+                <p className="text-[10px] text-[#022A4A]/70 leading-tight">
                   {speaker.organization}
                 </p>
               </div>
