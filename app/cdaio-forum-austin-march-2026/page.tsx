@@ -146,13 +146,13 @@ function FeaturedSpeakersSection() {
       name: 'Mruna Asoori',
       title: 'CDO',
       organization: 'NewRez',
-      image: '/abhishekmittalcdo.png'
+      image: '/mruna_asoori.png'
     },
     {
       name: 'Patrick Chew',
       title: 'VP AI & Data Science',
       organization: 'AIT World Logistics',
-      image: '/abhishekmittalcdo.png'
+      image: '/patrick_chew.png'
     },
     {
       name: 'Saba Dossani',
@@ -164,85 +164,85 @@ function FeaturedSpeakersSection() {
       name: 'Ash Dhupar',
       title: 'Chief Data & Analytics Officer',
       organization: 'Analog Devices',
-      image: '/abhishekmittalcdo.png'
+      image: '/ash_dhupar.png'
     },
     {
       name: 'Vijay Gandra',
       title: 'Global Chief Data Officer',
       organization: 'Acrisure',
-      image: '/abhishekmittalcdo.png'
+      image: '/vijay_gandra.png'
     },
     {
       name: 'Michelle Gelman',
       title: 'Chief Data Officer',
       organization: 'Yougov',
-      image: '/abhishekmittalcdo.png'
+      image: '/michelle_gelman.png'
     },
     {
       name: 'Justin Heller',
       title: 'Chief Data Officer',
       organization: 'Synchrony Financial',
-      image: '/abhishekmittalcdo.png'
+      image: '/justin_heller.png'
     },
     {
       name: 'Shiva Jaganathan',
       title: 'Chief Data Officer',
       organization: 'UT Austin',
-      image: '/abhishekmittalcdo.png'
+      image: '/shiva_jaganathan.png'
     },
     {
       name: 'Karthik Josyula',
       title: 'Head of Data & AI Platforms',
       organization: 'Kohler',
-      image: '/abhishekmittalcdo.png'
+      image: '/karthik_josyula.png'
     },
     {
       name: 'Sahil Kapoor',
       title: 'Global VP - Head of Data Analytics & AI',
       organization: 'TaskUs',
-      image: '/abhishekmittalcdo.png'
+      image: '/sahil_braham_kapoor.png'
     },
     {
       name: 'Washington Mashingaidze',
       title: 'Head of Data Science and Analytics',
       organization: 'Crown Castle',
-      image: '/abhishekmittalcdo.png'
+      image: '/washington_mashingaidze.png'
     },
     {
       name: 'Milan McGraw',
       title: 'Partner',
       organization: 'AWS',
-      image: '/abhishekmittalcdo.png'
+      image: '/milan_mcgraw.png'
     },
     {
       name: 'Abhishek Mittal',
       title: 'EVP, Chief Product & AI Officer',
       organization: 'AML Rightsource',
-      image: '/abhishekmittalcdo.png'
+      image: '/abhishek_mittal.png'
     },
     {
       name: 'Karthik Ramasamy',
       title: 'Chief Analytics Officer',
       organization: 'Guardian Industries',
-      image: '/abhishekmittalcdo.png'
+      image: '/karthik_ramaswamy.png'
     },
     {
       name: 'Mitesh Shah',
       title: 'Chief Data Officer',
       organization: 'Cardworks',
-      image: '/abhishekmittalcdo.png'
+      image: '/mitesh_shah.png'
     },
     {
       name: 'Shivani Sharma',
       title: 'Head of IT Transformation and AI Enablement',
       organization: 'Walgreens',
-      image: '/abhishekmittalcdo.png'
+      image: '/shivani_sharma.png'
     },
     {
       name: 'Piyush Singal',
       title: 'Head - Enterprise Data & AI',
       organization: 'Surgery Partners',
-      image: '/abhishekmittalcdo.png'
+      image: '/piyush_singhal.png'
     }
   ];
 
@@ -259,13 +259,13 @@ function FeaturedSpeakersSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           {speakers.map((speaker, index) => (
             <div
               key={index}
               className="bg-white border-2 border-[#022A4A]/10 hover:border-[#007BFF]/50 transition-all duration-300 overflow-hidden group"
             >
-              <div className="relative aspect-square bg-[#022A4A]/5">
+              <div className="relative aspect-[3/4] bg-[#022A4A]/5">
                 <Image
                   src={speaker.image}
                   alt={speaker.name}
@@ -273,14 +273,14 @@ function FeaturedSpeakersSection() {
                   className="object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                 />
               </div>
-              <div className="p-4">
-                <h3 className="text-lg font-bold text-[#022A4A] mb-1 uppercase">
+              <div className="p-3">
+                <h3 className="text-sm font-bold text-[#022A4A] mb-1 uppercase leading-tight">
                   {speaker.name}
                 </h3>
-                <p className="text-sm text-[#007BFF] font-semibold mb-1">
+                <p className="text-xs text-[#007BFF] font-semibold mb-1 leading-tight">
                   {speaker.title}
                 </p>
-                <p className="text-sm text-[#022A4A]/70">
+                <p className="text-xs text-[#022A4A]/70 leading-tight">
                   {speaker.organization}
                 </p>
               </div>
