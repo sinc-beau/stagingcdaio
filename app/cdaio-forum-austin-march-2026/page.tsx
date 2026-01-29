@@ -204,7 +204,7 @@ function FeaturedSpeakersSection() {
     },
     {
       name: 'Milan McGraw',
-      title: 'Partner',
+      title: 'Head of Generative AI and ML',
       organization: 'AWS',
       image: '/milan_mcgraw.png'
     },
