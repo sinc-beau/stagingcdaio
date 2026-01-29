@@ -15,6 +15,7 @@ export default function ForumPage() {
       <Header onOpenJoinModal={() => setIsJoinModalOpen(true)} />
       <main>
         <HeroSection />
+        <FeaturedSpeakersSection />
         <WhyAttendSection />
         <AgendaHighlightsSection />
         <VenueSection />
@@ -133,6 +134,158 @@ function HeroSection() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function FeaturedSpeakersSection() {
+  const speakers = [
+    {
+      name: 'Mruna Asoori',
+      title: 'CDO',
+      organization: 'NewRez',
+      image: '/abhishekmittalcdo.png'
+    },
+    {
+      name: 'Patrick Chew',
+      title: 'VP AI & Data Science',
+      organization: 'AIT World Logistics',
+      image: '/abhishekmittalcdo.png'
+    },
+    {
+      name: 'Saba Dossani',
+      title: 'Chief Data & Analytics Officer',
+      organization: 'Comerica',
+      image: '/abhishekmittalcdo.png'
+    },
+    {
+      name: 'Ash Dhupar',
+      title: 'Chief Data & Analytics Officer',
+      organization: 'Analog Devices',
+      image: '/abhishekmittalcdo.png'
+    },
+    {
+      name: 'Vijay Gandra',
+      title: 'Global Chief Data Officer',
+      organization: 'Acrisure',
+      image: '/abhishekmittalcdo.png'
+    },
+    {
+      name: 'Michelle Gelman',
+      title: 'Chief Data Officer',
+      organization: 'Yougov',
+      image: '/abhishekmittalcdo.png'
+    },
+    {
+      name: 'Justin Heller',
+      title: 'Chief Data Officer',
+      organization: 'Synchrony Financial',
+      image: '/abhishekmittalcdo.png'
+    },
+    {
+      name: 'Shiva Jaganathan',
+      title: 'Chief Data Officer',
+      organization: 'UT Austin',
+      image: '/abhishekmittalcdo.png'
+    },
+    {
+      name: 'Karthik Josyula',
+      title: 'Head of Data & AI Platforms',
+      organization: 'Kohler',
+      image: '/abhishekmittalcdo.png'
+    },
+    {
+      name: 'Sahil Kapoor',
+      title: 'Global VP - Head of Data Analytics & AI',
+      organization: 'TaskUs',
+      image: '/abhishekmittalcdo.png'
+    },
+    {
+      name: 'Washington Mashingaidze',
+      title: 'Head of Data Science and Analytics',
+      organization: 'Crown Castle',
+      image: '/abhishekmittalcdo.png'
+    },
+    {
+      name: 'Milan McGraw',
+      title: 'Partner',
+      organization: 'AWS',
+      image: '/abhishekmittalcdo.png'
+    },
+    {
+      name: 'Abhishek Mittal',
+      title: 'EVP, Chief Product & AI Officer',
+      organization: 'AML Rightsource',
+      image: '/abhishekmittalcdo.png'
+    },
+    {
+      name: 'Karthik Ramasamy',
+      title: 'Chief Analytics Officer',
+      organization: 'Guardian Industries',
+      image: '/abhishekmittalcdo.png'
+    },
+    {
+      name: 'Mitesh Shah',
+      title: 'Chief Data Officer',
+      organization: 'Cardworks',
+      image: '/abhishekmittalcdo.png'
+    },
+    {
+      name: 'Shivani Sharma',
+      title: 'Head of IT Transformation and AI Enablement',
+      organization: 'Walgreens',
+      image: '/abhishekmittalcdo.png'
+    },
+    {
+      name: 'Piyush Singal',
+      title: 'Head - Enterprise Data & AI',
+      organization: 'Surgery Partners',
+      image: '/abhishekmittalcdo.png'
+    }
+  ];
+
+  return (
+    <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-8 lg:px-16">
+        <div className="text-center mb-16">
+          <div className="text-xs font-mono text-[#007BFF] tracking-wider mb-4 uppercase">Industry Leaders</div>
+          <h2 className="text-5xl lg:text-6xl font-black text-[#022A4A] mb-6 uppercase">
+            Featured Speakers
+          </h2>
+          <p className="text-xl text-[#022A4A]/70 max-w-3xl mx-auto">
+            Learn from proven data and AI leaders driving transformation at enterprise scale.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {speakers.map((speaker, index) => (
+            <div
+              key={index}
+              className="bg-white border-2 border-[#022A4A]/10 hover:border-[#007BFF]/50 transition-all duration-300 overflow-hidden group"
+            >
+              <div className="relative aspect-square bg-[#022A4A]/5">
+                <Image
+                  src={speaker.image}
+                  alt={speaker.name}
+                  fill
+                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-lg font-bold text-[#022A4A] mb-1 uppercase">
+                  {speaker.name}
+                </h3>
+                <p className="text-sm text-[#007BFF] font-semibold mb-1">
+                  {speaker.title}
+                </p>
+                <p className="text-sm text-[#022A4A]/70">
+                  {speaker.organization}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
