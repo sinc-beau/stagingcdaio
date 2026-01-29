@@ -155,12 +155,6 @@ function FeaturedSpeakersSection() {
       image: '/patrick_chew.png'
     },
     {
-      name: 'Saba Dossani',
-      title: 'Chief Data & Analytics Officer',
-      organization: 'Comerica',
-      image: '/abhishekmittalcdo.png'
-    },
-    {
       name: 'Ash Dhupar',
       title: 'Chief Data & Analytics Officer',
       organization: 'Analog Devices',
